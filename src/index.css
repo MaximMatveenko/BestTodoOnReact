@@ -22,12 +22,12 @@
     padding: 20px;
 }
 
-#TasksTextInput {
+.TextInput {
     width: 83%;
     padding: 7px;
 }
 
-#TasksTextInput::placeholder {
+.TextInput::placeholder {
     font-size: 15px;
 }
 
