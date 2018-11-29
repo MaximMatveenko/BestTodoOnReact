@@ -16,10 +16,6 @@ export default class TodoItems extends Component {
         this.props.delete(key);
     }
 
-    // edit: function () {
-        
-    // }
-
     render() {
         let todoEntries = this.props.entries;
         let listItems = todoEntries.map(this.createTasks);
