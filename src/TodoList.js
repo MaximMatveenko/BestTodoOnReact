@@ -9,7 +9,7 @@ export class TodoList extends Component {
       items: []
     };
   }
-  
+
   addItem = (e) => {
     if (this._inputElement.value !== "") {
       let newItem = {
@@ -33,15 +33,15 @@ export class TodoList extends Component {
 
 
   deleteItem = (key) => {
-    let filteredItem = this.state.items.filter(function(item) {
-      return (item.key !==key)
+    let filteredItem = this.state.items.filter(function (item) {
+      return (item.key !== key)
     });
-    
+
     this.setState({
       items: filteredItem
     });
   }
-  
+
 
   render() {
     return (
@@ -49,7 +49,7 @@ export class TodoList extends Component {
         <div className="legacy">
           ToDo:
         </div>
-        <TodoItems entries={this.state.items} delete={this.deleteItem}/>
+        <TodoItems entries={this.state.items} delete={this.deleteItem} />
         <hr></hr>
         <div className="TaskInput">
           <form onSubmit={this.addItem}>
