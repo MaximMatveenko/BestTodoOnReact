@@ -26,19 +26,17 @@ export class TodoList extends Component {
 
     this._inputElement.value = "";
 
-    console.log(this.state.items);
-
     e.preventDefault();
   }
 
 
   deleteItem = (key) => {
-    let filteredItem = this.state.items.filter(function (item) {
+    let filteredItems = this.state.items.filter(function (item) {
       return (item.key !== key)
     });
 
     this.setState({
-      items: filteredItem
+      items: filteredItems
     });
   }
 
@@ -54,7 +52,6 @@ export class TodoList extends Component {
         <div className="TaskInput">
           <form onSubmit={this.addItem}>
             <input ref={(node) => { this._inputElement = node }}
-              id="TasksTextInput"
               className="TextInput"
               placeholder="What do you need to do?">
             </input>

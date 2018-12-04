@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 export class TodoItems extends Component {
 
-    createTasks = (item) => {
+    createTask = (item) => {
         return (
             <li key={item.key}>
                 <input className="editInput" 
@@ -22,7 +22,7 @@ export class TodoItems extends Component {
     }
 
     render() {
-        let listItems = this.props.entries.map(this.createTasks);
+        const listItems = this.props.entries.map(this.createTask);
 
         return (
             <ul className="theList">
