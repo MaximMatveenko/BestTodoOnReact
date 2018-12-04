@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import TodoItems from './TodoItems';
+import { TodoItems } from './TodoItems';
 
 
-export default class TodoList extends Component {
+export class TodoList extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +10,6 @@ export default class TodoList extends Component {
     };
   }
   
-
   addItem = (e) => {
     if (this._inputElement.value !== "") {
       let newItem = {
@@ -20,7 +19,6 @@ export default class TodoList extends Component {
 
       this.setState((prevState) => {
         return {
-          
           items: prevState.items.concat(newItem)
         };
       });

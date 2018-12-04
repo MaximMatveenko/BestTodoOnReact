@@ -24,7 +24,7 @@
 
 .TextInput {
     width: 83%;
-    padding: 7px;
+    padding: 4px;
 }
 
 .TextInput::placeholder {
@@ -68,4 +68,25 @@
     padding: 2px 5px;
     position: absolute;
     right: 10px;
+}
+
+.taskSaveBtn {
+    font-size: 15px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1ps solid gray;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 2px 5px;
+    position: absolute;
+    right: 10px;
+}
+
+.editInput {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 83%;
+    padding: 4px;
 }

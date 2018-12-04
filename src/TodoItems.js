@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 
-export default class TodoItems extends Component {
+export class TodoItems extends Component {
 
     createTasks = (item) => {
-        return ( <li key={item.key}>{item.text}
-            <button onClick ={() => this.delete(item.key)}
-            className="taskDelBtn">
-            X
-            </button>
-            </li>
-        )
+            return ( <li key={item.key}> 
+                        <input className="editInput" type="text" defaultValue={item.text}></input>
+                        <button onClick ={() => this.delete(item.key)}className="taskDelBtn">
+                        X
+                        </button>
+                      </li>
+            )
     }
 
     delete(key) {
