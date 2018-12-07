@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -19,7 +19,7 @@
 }
 
 .TaskInput {
-    padding: 10px;
+    padding: 20px;
 }
 
 .TextInput {
@@ -62,7 +62,20 @@
     background-color: Transparent;
     background-repeat:no-repeat;
     border: 1ps solid gray;
-    
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    padding: 2px 5px;
+    position: absolute;
+    right: 10px;
+}
+
+.taskSaveBtn {
+    font-size: 15px;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: 1ps solid gray;
+    cursor:pointer;
     overflow: hidden;
     outline:none;
     padding: 2px 5px;
@@ -76,13 +89,4 @@
     outline: none;
     width: 83%;
     padding: 4px;
-}
-
-.checkkkk{
-    width: 15px;
-    height: 15px;
-    border: 2px solid black;
-    cursor:pointer;
-    position: absolute;
-    right: 10px;
 }
